@@ -3,7 +3,7 @@
   <head>
     <title>Welcome to tripleSPH</title>
     <style>
-      /* Header styles */
+      /* header style */
       header {
         background-color: #d3d3d3;
         padding: 20px;
@@ -45,7 +45,7 @@
   border: 1px solid #ccc;
   border-top: none;
 }
-
+/* Drop down style */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -71,29 +71,31 @@
 .dropdown:hover .dropdown-content {
   display: block;
 
-/* Archieve */
- /* <img src="tripleslogo.png" alt="tsphlogo" class="tsphlogo" style="height:100px;"> */
-/* <button class="tablinks" onclick="openTab(event, 'Events')">Events</button>*/
+
     </style>
 
   </head>
 
   <body>
-    <header>
+
+   <header>
+<!-- Logo -->
      <img src="tripleslogo.png" alt="tsphlogo" class="tsphlogo" style="height:100px;">
+<!-- Tabs -->
       <div class="tab">
+      <!-- Home-->
       <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
+      <!-- Events -->
        <div class="dropdown">
-    <button class="tabl">Events
+    <button class="tabl" onclick="myFunction()">Events
       <i class="fa fa-caret-down"></i>
-    
+        <!-- Events Tab -->
     <div class="dropdown-content">
       <a class="tablinks" onclick="openTab(event, 'E1')">Strawberry Love</a>
       <a>Dream in Blue</a>
       <a>Cosmo:PreSSStart</a>
-      
     </div>
-      
+      <!-- SNS -->
       <button class="tablinks" onclick="openTab(event, 'SNS')">SNS</button>
       </div>
     </button>
