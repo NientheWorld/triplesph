@@ -55,6 +55,18 @@
   z-index: 1;
 }
 
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
 .dropdown-content a {
   float: none;
   color: black;
@@ -90,7 +102,7 @@
     <button class="tabl" onclick="myFunction()">Events
       <i class="fa fa-caret-down"></i>
         <!-- Events Tab -->
-    <div class="dropdown-content">
+    <div class="dropdown-content" id="MyDropdown">
       <a class="tablinks" onclick="openTab(event, 'E1')">Strawberry Love</a>
       <a>Dream in Blue</a>
       <a>Cosmo:PreSSStart</a>
