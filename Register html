@@ -10,22 +10,49 @@
 
 <body>
   <div class="Log">
-    <form action="http://www.google.com" method="get">
+    <form id="form" action="www.google.com" method="post">
+
         <h1 style=font-family:Arial;>LOGIN</h1>
       <div class="input">
-        <input type="text" placeholder="Username" required>
+        <input id="user" type="text" placeholder="Username" required>
       </div>
       <div class="input">
-        <input type="password" placeholder="Password" required>
+        <input id="pass" type="password" placeholder="Password" required>
         <div class="forgot">
           <a href="#" style=font-family:'Times New Roman', Times, serif;>Forgot Password?</a>
       </div>
-        <button type="submit" class="btn" href="http//:www.google.com"> log in </button>
+        <button type="submit" name="loginbtn" class="btn"> log in </button>
         
     </form>
     
   </div>
-  
+
+  <script>
+    window.onload=function(){
+      
+   const form = document.getElementById('form');
+    const user = document.getElementById('user');
+    const pass = document.getElementById('pass');
+    }
+    form.addEventListener('submit', function(e) {e.preventDefault();
+
+    const us = user.value;
+    const ps = pass.value;
+                                                 
+    if (us != "tsph123" & ps != "tsphpassword"){
+
+      alert("Incorrect Username or Password");
+    }
+    else {
+      function Myfunction(){
+        location.replace("https://www.google.com")
+      }
+    }
+
+                                               
+})
+    
+  </script>
 </body>
 
 </html>
