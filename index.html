@@ -8,22 +8,55 @@
 <style>
     *{box-sizing: border-box;}
 body{
-    background-color:rgb(207, 207, 207);
+
+    background-color:rgb(104, 104, 104);
     font-family:verdana,sans-serif;
+    
 }
 
 .mySlides {display: none;}
 img{vertical-align: middle;}
 
+.mainbg {
+  position: relative;
+  align-self: center;
+}
+
+.main {
+  position:absolute;
+  top: 0px;
+  border: 5px solid #ffffff;
+}
+
+.Eventbg {
+  position: relative;
+  align-self: center;
+
+}
+.Event {
+  position:absolute;
+  top: 0px;
+}
+
+.dtpbg {
+  position: relative;
+  align-self: center;
+
+}
+.dtp {
+  position:absolute;
+  top: 0px;
+}
+
 /*Tab Style*/
 .tab {
     overflow:hidden;
     border: 1px solid #ccc;
-    background-color: #000000;
+    background-color: #474747;
 }
 /*Tab button Style*/
 .tab button{
-    background-color: darkgray;
+    background-color: rgb(114, 114, 114);
     float:left;
     border:none;
     outline:none;
@@ -34,7 +67,7 @@ img{vertical-align: middle;}
 }
 /*Tab button Style*/
 .tab button:hover {
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(95, 95, 95);
 }
 /*Tab button active Style*/
 .tab button.active{
@@ -91,30 +124,49 @@ img{vertical-align: middle;}
 }
 /*bg image Style*/
 
+.Bod {
+    background-color: rgba(39, 39, 39, 0.411);
+    width: 1250px;
+    height: 350px;
+    margin: 20px;
+    padding: 50px;
+    top: 10px;
+}
+
 </style>
 </head>
 <body>
 <img src="tripleslogo.png" alt="tsphlogo" width="15%"> 
 <div class="tab">
-    <button class="tablinks" onclick="window.location='index.html';" style="background-color: rgb(70, 69, 69);">Home</button>>
+    <button class="tablinks" onclick="window.location='index.html';" style="background-color: rgb(70, 69, 69);">Home</button>
     <button class="tablinks" onclick="window.location='event.html';">Events</button>
     <button class="tablinks" onclick="window.location='sns.html';">SNS Media</button>
 </div>
-
-<h1 style="text-align:center">This is Home Page</h1>
-<div class="slideshow-container">
-    <div class="mySlides fade">
-        <img src="./event preview/Main.jfif" style="width:50%">
+<br>
+<br>
+<div class="slideshow-container"><a href="https://www.facebook.com/share/p/49PaLJ1hn5q3vvkL/">
+    <div class="mySlides fade"> 
+        <div class="mainbg"><img  src="event preview/Main.jfif" style="width: 1000px; height:500px; filter: blur(10px);">
+        <div class="main"><img  src="event preview/Main.jfif" style="width: 40%">  
+    </div>
+    </div>
     </div>
     <div class="mySlides fade">
         
-        <img src="./event preview/Kits.jfif" style="width:50%">
+        <div class="mainbg"><img  src="event preview/Loc.jfif" style="width: 1000px; height:500px; filter: blur(10px);">
+            <div class="main"><img  src="event preview/Loc.jfif" style="width: 50%">  
+        </div>
+        </div>
     </div>
     <div class="mySlides fade">
     
-        <img src="./event preview/Loc.jfif" style="width:50%">
+        <div class="mainbg"><img  src="event preview/Kits.jfif" style="width: 1000px; height:500px; filter: blur(10px);">
+        <div class="main"><img  src="event preview/Kits.jfif" style="width: 50%">  
+        </div>
+        </div>
     </div>
 </div>
+</a>
 </div>
 <br>
 
@@ -122,6 +174,12 @@ img{vertical-align: middle;}
     <span class="dot"></span>
     <span class="dot"></span>
     <span class="dot"></span>
+</div>
+
+<div class="Bod">
+    <h1>WHO IS TRIPLES?</h1>
+    <h3>tripleS (트리플에스/トリプルS; also known as SSS or Social Sonyo Seoul), is a 24-member South Korean girl group under MODHAUS.  The group consists of Kim YooYeon, Mayu, Xinyu, Kim NaKyoung, Park SoHyun, Seo DaHyun, Nien, Yoon SeoYeon, JiYeon, Kotone, Kim ChaeYeon, Gong YuBin, Lee JiWoo, Kaede, Park ShiOn, Sullin, Lynn, Jeong HyeRin, Kim ChaeWon, Jeong HaYeon, Kim SooMin, Kwak YeonJi, JooBin, and SeoAh. tripleS debuted with the first 10 members on February 13, 2023, with the mini album ASSEMBLE, and made their OT24 debut on May 8, 2024 with ASSEMBLE24. Their official anniversary date is May 1, 2022, when the first member was revealed.</h3>
+    <h6 style="font-style: italic; text-align: right;"><a href="https://kprofiles.com/triples-members-profile-and-facts/">https://kprofiles.com/triples-members-profile-and-facts/</a></h6>
 </div>
 
 <script>
