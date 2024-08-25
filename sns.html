@@ -6,9 +6,61 @@
     <title>tripleS Philippines</title>
     <link rel="icon" type="image/x-icon" href="TripleSPH_Black.png">
 <style>
+    @import url(css/style.css);
 body{
     background-color:rgb(207, 207, 207)
 }
+
+#wrapper {
+    min-width: 1002px;
+}
+
+.txtar1 {
+   padding: 2.5%;
+   align-self: center;
+   font-family: Helvetica;
+   border-style: solid;
+   border-width:thick ;
+   border-color: rgb(0, 0, 0);
+   margin-top: 1%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.txtar1::placeholder {
+    font-size: 15px;
+}
+
+.txtar2 {
+font-family: Helvetica;
+   border-style: dashed;
+   border-color: rgb(0, 0, 0);
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.selection {
+    margin-top: 1%;
+    text-align: center;
+    display: block;
+     margin-left: auto;
+     margin-right: auto;
+    }
+
+.btn1 {
+    display: block;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.btn2 {
+    display: block;
+     margin-left: auto;
+     margin-right: auto;
+}
+
 
 /*Tab Style*/
 .tab {
@@ -54,22 +106,23 @@ body{
     
 </div>
 
-<h3>SNS CAPTIONING AREA</h3>
+<h3 style="text-align: center; font-family: Lemon Milk;">SNS CAPTIONING AREA</h3>
 
- <div>
-    <textarea id="txtar" rows="10" cols="40" placeholder="Input Here"></textarea>
-     <br>
-     <label for="updates">Choose a Header</label>
-     <select name="updates" id="choose" src="./index.html">
+<div >
+    <textarea class="txtar1" id="txtar" rows="10" cols="40" placeholder="Input Caption Here"></textarea>
+    </div>
+    <br>
+     <div class="selection">
+     <label for="updates">Choose a  Header</label>
+     <select name="updates" class="bx1" id="choose">
         <option value="[✉]tripleS Mail">Mail Update</option>
         <option value="[📷]tripleS Update">Photo Update</option>
         <option value="[📺]tripleS Update">Video Update</option>
         <option value="[📶]SIGNAL Update">Signal Update</option>
         </select>
-    </div>
-
-    <div >
-     <label for="memberss">Choose a Hashtag</label>
+        <br>
+        <br>
+     <label for="memberss" id="lbl1">Choose a Hashtag</label>
      <select name="memberss" id="member">
         <option value="">None</option>
         <option value="#SeoYeon #서연">Seoyeon</option>
@@ -97,23 +150,30 @@ body{
         <option value="#SeoAh #서아">Seoah</option>
         <option value="JiYeon #지연 ">Jiyeon</option>
      </select>
-    </div>
-    <br>
+     <br>
+     <br>
+     <div style="margin-left: 4%">
     <label>Link Included</label>
      <select id="link">
         <option value="yes">Yes</option>
         <option value="no">No</option>
      </select>
+     </div>
+    </div>
+    
      <br>
-     <button type="button" onclick="greet()" id="clck">Generate</button>
+     <button class="btn1" type="button" onclick="greet()" id="clck">Generate</button>
 
 
     <br>
     <br>
-    <textarea id="header" rows="15" cols="40" readonly></textarea>
+    <textarea class="txtar2" id="header" rows="15" cols="40" readonly></textarea>
     <br>
-    <button type="button" onclick="copycat()" id="clip">Copy to Clipboard</button>
-
+    <button class="btn2" type="button" onclick="copycat()" id="clip">Copy to Clipboard</button>
+    <br>
+    <br>
+    <br>
+    <br>
 <script>
 function greet(){
         var cap = document.getElementById("txtar").value;
