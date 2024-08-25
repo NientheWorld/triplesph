@@ -54,10 +54,106 @@ body{
     
 </div>
 
-<p>This is sns</p>
+<h3>SNS CAPTIONING AREA</h3>
+
+<div>
+    <textarea id="txtar" rows="10" cols="40" placeholder="Input Here"></textarea>
+     <br>
+     <label for="updates">Choose an Header</label>
+     <select name="updates" id="choose" src="./index.html">
+        <option value="[✉]tripleS Mail">Mail Update</option>
+        <option value="[📷]tripleS Update">Photo Update</option>
+        <option value="[📺]tripleS Update">Video Update</option>
+        <option value="[📶]SIGNAL Update">Signal Update</option>
+    </select>
+    </div>
+
+    <div >
+     <label for="memberss">Choose an Hashtag</label>
+     <select name="memberss" id="member">
+     <option value="">None</option>
+     <option value="#SeoYeon #서연">Seoyeon</option>
+     <option value="#HyeRin #혜린">Hyerin</option>
+     <option value="#JiWoo #지우">Jiwoo</option>
+     <option value="#ChaeYeon #채연">Seoyeon</option>
+     <option value="#YooYeon #유연">Hyerin</option>
+     <option value="#SooMin #수민">Jiwoo</option>
+     <option value="#NaKyoung #나경">Seoyeon</option>
+     <option value="#YuBin #유빈">Hyerin</option>
+     <option value="#Kaede #카에데">Jiwoo</option>
+     <option value="#DaHyun #다현">Seoyeon</option>
+     <option value="#Kotone #코토네">Hyerin</option>
+     <option value="#YeonJi #연지">Jiwoo</option>
+     <option value="#Nien #니엔">Seoyeon</option>
+     <option value="#SoHyun #소현">Hyerin</option>
+     <option value="#Xinyu #신위">Jiwoo</option>
+     <option value="#Mayu #마유">Seoyeon</option>
+     <option value="#Lynn #린">Hyerin</option>
+     <option value="#JooBin #주빈">Jiwoo</option>
+     <option value="#SeoYeon #서연">Seoyeon</option>
+     <option value="#HaYeon #하연">Hyerin</option>
+     <option value="#ShiOn #시온">Jiwoo</option>
+     <option value="#ChaeWon #채원">Seoyeon</option>
+     <option value="#Sullin #설린">Hyerin</option>
+     <option value="#SeoAh #서아">Jiwoo</option>
+     <option value="JiYeon #지연 ">Seoyeon</option>
+     </select>
+    </div>
+    <br>
+    <label>Do have links?</label>
+     <select id="link">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+     </select>
+     <br>
+     <button type="button" onclick="greet()" id="clck">Respond</button>
+
+
+    <br>
+    <br>
+    <textarea id="header" rows="15" cols="40" readonly></textarea>
+    <br>
+    <button type="button" onclick="copycat()" id="clip">Copy to Clipboard</button>
 
 <script>
+function greet(){
+        var cap = document.getElementById("txtar").value;
+        var clck = document.getElementById("clck");
+        var choo = document.getElementById("choose").value;
+        var mem = document.getElementById("member").value;
+        var link = document.getElementById("link").value;
 
+            clck.addEventListener("click",function(){
+            
+            var link = document.getElementById("link").value;
+            if (link == "yes") {
+                var ans = "🔗 \n";
+            }
+
+            if (link == "no") {
+                var ans = " ";
+            }
+            
+            document.getElementById("header").innerHTML = 
+            choo + "\n" + "\n" +
+            cap + "\n" +
+            ans + "\n" +
+            "#tripleS #트리플에스 #トリプルS #トリプルエス #トエス" + "\n" +
+            mem + "@triplescosmos"
+            ;
+            
+        })
+    }
+
+    function copycat(){
+        var copykey = document.getElementById("header");
+
+            copykey.select();
+            copykey.setSelectionRange(0,9999999);
+
+            document.execCommand("copy");
+            alert("copied to clipboard");
+    }
 </script>
 
 </body>
