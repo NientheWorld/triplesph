@@ -1,0 +1,128 @@
+*{box-sizing: border-box;}
+body{
+
+    background-color:rgb(104, 104, 104);
+    font-family:verdana,sans-serif;
+    
+}
+
+.mySlides {display: none;
+    padding-top: 25px ;
+    padding-bottom: 25px ;
+    border: 2px solid black;  
+}
+img{vertical-align: middle;}
+
+.main {
+  position: relative;
+}
+
+
+.Eventbg {
+  position: relative;
+  align-self: center;
+
+}
+.Event {
+  position:absolute;
+  top: 0px;
+}
+
+.dtpbg {
+  position: relative;
+  align-self: center;
+
+}
+.dtp {
+  position:absolute;
+  top: 0px;
+}
+
+/*Tab Style*/
+.tab {
+    overflow:hidden;
+    border: 1px solid #ccc;
+    background-color: #474747;
+}
+/*Tab button Style*/
+.tab button{
+    background-color: rgb(114, 114, 114);
+    float:left;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+/*Tab button Style*/
+.tab button:hover {
+    background-color: rgb(95, 95, 95);
+}
+/*Tab button active Style*/
+.tab button.active{
+    background-color: black;
+}
+/*Tab button active Style*/
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+/*Slideshow info Style*/
+.slideshow-container {
+    max-width: 1000px;
+    position:relative;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+/*Numbertext Style*/
+.numbertext{
+    color:#000000;
+    font-size:12px;
+    padding: 8px 12px;
+    position:absolute;
+    top:0;
+}
+/*dots Style*/
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 5 ease;
+}
+.active{
+    background-color: #717171;
+}
+/*fade Style*/
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade {
+    from {opacity: 0.5}
+    to {opacity: 6}
+}
+/*small screen active Style*/
+@media only screen and (max-width:300px) {
+    .text {font-size:11px}   
+}
+/*bg image Style*/
+
+.Bod {
+    margin-left: 40px; margin-top: 20px;
+    background-color: rgba(39, 39, 39, 0.411);
+    width: 1200px;
+    height: 350px;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 20px;
+}
