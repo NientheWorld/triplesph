@@ -1,4 +1,4 @@
-*{box-sizing: border-box;}
+
 body{
 
     background-color:rgb(104, 104, 104);
@@ -15,27 +15,6 @@ img{vertical-align: middle;}
 
 .main {
   position: relative;
-}
-
-
-.Eventbg {
-  position: relative;
-  align-self: center;
-
-}
-.Event {
-  position:absolute;
-  top: 0px;
-}
-
-.dtpbg {
-  position: relative;
-  align-self: center;
-
-}
-.dtp {
-  position:absolute;
-  top: 0px;
 }
 
 /*Tab Style*/
