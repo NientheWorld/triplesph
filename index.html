@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport"
+    content="width=device-with, initial-scale=1">
+    <title>tripleS Philippines</title>
+    <link rel="icon" type="image/x-icon" href="TripleSPH_Black.png">
+    <link rel="stylesheet" href="index.css"/> 
+</head>
+<body>
+<img src="tripleslogo.png" alt="tsphlogo" width="15%"> 
+<div class="tab">
+    <button class="tablinks" onclick="window.location='index.html';" style="background-color: rgb(70, 69, 69);">Home</button>
+    <button class="tablinks" onclick="window.location='event.html';">Events</button>
+    <button class="tablinks" onclick="window.location='sns.html';">SNS Media</button>
+</div>
+<br>
+<br>
+
+<div class="slideshow-container"><a href="https://www.facebook.com/share/p/49PaLJ1hn5q3vvkL/">
+    <div class="mySlides fade" style='
+        background-image: url("event preview/Main.png");
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+        '>
+        <div class="main">
+        <img  src="event preview/Main.jfif" style="width: 40%">
+        </div></div>
+
+        <div class="mySlides fade" style='
+        background-image: url("event preview/Loc.png");
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        '>
+        <div class="main">
+        <img  src="event preview/Loc.jfif" style="width: 50%">
+        </div></div>
+        
+        <div class="mySlides fade" style='
+        background-image: url("event preview/Kits.png");
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        '>
+        <div class="main">
+        <img  src="event preview/Kits.jfif" style="width: 50%">
+                </div></div>
+</a>
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<div class="Bod">
+    <h1>WHO IS TRIPLES?</h1>
+    <h3>tripleS (트리플에스/トリプルS; also known as SSS or Social Sonyo Seoul), is a 24-member South Korean girl group under MODHAUS.  The group consists of Kim YooYeon, Mayu, Xinyu, Kim NaKyoung, Park SoHyun, Seo DaHyun, Nien, Yoon SeoYeon, JiYeon, Kotone, Kim ChaeYeon, Gong YuBin, Lee JiWoo, Kaede, Park ShiOn, Sullin, Lynn, Jeong HyeRin, Kim ChaeWon, Jeong HaYeon, Kim SooMin, Kwak YeonJi, JooBin, and SeoAh. tripleS debuted with the first 10 members on February 13, 2023, with the mini album ASSEMBLE, and made their OT24 debut on May 8, 2024 with ASSEMBLE24. Their official anniversary date is May 1, 2022, when the first member was revealed.</h3>
+    <h6 style="font-style: italic; text-align: right;"><a href="https://kprofiles.com/triples-members-profile-and-facts/">https://kprofiles.com/triples-members-profile-and-facts/</a></h6>
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
 
