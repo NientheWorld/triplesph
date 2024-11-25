@@ -30,37 +30,54 @@
         <option value="[📺]tripleS Update">Video Update</option>
         <option value="[📶]SIGNAL Update">Signal Update</option>
         <option value="[🚀] tripleS Gravity Update">Gravity Update</option>
+        <option value="[🎙] TSPH STATIONHEAD">Stationhead Update</option>
+        <option value="[📺]tripleS">Video Update</option>
+        </select>
+        <br>
+        <br>
+        <label for="units">Choose a Unit</label>
+     <select name="units" class="uni" id="un">
+        <option value="">-</option>
+        <option value="#AcidAngelfromAsia #애시드엔젤프롬에이시아">AAA</option>
+        <option value="#KRystalEyes #크리스탈아이즈">KRE</option>
+        <option value="#LOVElution #러블루션">LOVElution</option>
+        <option value="#tripleS_NXT">tripleS NXT</option>
+        <option value="#tripleS_Aria #트리플에스아리아">Aria</option>
+        <option value="#EVOLution #에볼루션">EVOLution</option>
+        <option value="#VisionaryVision ">Visionary Vision</option>
+        <option value="#tripleS_Hatchi ">Hatchi</option>
         </select>
         <br>
         <br>
      <label for="memberss" id="lbl1">Choose a Hashtag</label>
      <select name="memberss" id="member">
         <option value="">-</option>
-        <option value="#SeoYeon #서연">Seoyeon</option>
-        <option value="#HyeRin #혜린">Hyerin</option>
-        <option value="#JiWoo #지우">Jiwoo</option>
-        <option value="#ChaeYeon #채연">Chaeyeon</option>
-        <option value="#YooYeon #유연">Yooyeon</option>
-        <option value="#SooMin #수민">Soomin</option>
-        <option value="#NaKyoung #나경">Nakyoung</option>
-        <option value="#YuBin #유빈">Yubin</option>
-        <option value="#Kaede #카에데">Kaede</option>
-        <option value="#DaHyun #다현">Dahyun</option>
-        <option value="#Kotone #코토네">Kotone</option>
-        <option value="#YeonJi #연지">Yeonji</option>
-        <option value="#Nien #니엔">Nien</option>
-        <option value="#SoHyun #소현">Sohyun</option>
-        <option value="#Xinyu #신위">Xinyu</option>
-        <option value="#Mayu #마유">Mayu</option>
-        <option value="#Lynn #린">Lynn</option>
-        <option value="#JooBin #주빈">Joobin</option>
-        <option value="#HaYeon #하연">Hayeon</option>
-        <option value="#ShiOn #시온">Shion</option>
-        <option value="#ChaeWon #채원">Chaewon</option>
-        <option value="#Sullin #설린">Sullin</option>
-        <option value="#SeoAh #서아">Seoah</option>
-        <option value="#JiYeon #지연 ">Jiyeon</option>
+        <option value=" #SeoYeon #서연 #ソヨン">Seoyeon</option>
+        <option value="#HyeRin #혜린 #ヘリン">Hyerin</option>
+        <option value="#JiWoo #지우 #ジウ">Jiwoo</option>
+        <option value="#ChaeYeon #채연 #チェヨン">Chaeyeon</option>
+        <option value="#YooYeon #유연 #ユヨン">Yooyeon</option>
+        <option value="#SooMin #수민 #スミン">Soomin</option>
+        <option value="#NaKyoung #나경 #ナギョ">Nakyoung</option>
+        <option value="#YuBin #유빈 #ユビン">Yubin</option>
+        <option value="#Kaede #카에데 #カエデ">Kaede</option>
+        <option value="#DaHyun #다현 #ダヒョン">Dahyun</option>
+        <option value="#Kotone #코토네 #コトネ">Kotone</option>
+        <option value="#YeonJi #연지 #ヨンジ">Yeonji</option>
+        <option value="#Nien #니엔 #ニエン">Nien</option>
+        <option value="#SoHyun #소현 #ソヒョン">Sohyun</option>
+        <option value="#Xinyu #신위 #シンウィー">Xinyu</option>
+        <option value="#Mayu #마유 #マユ">Mayu</option>
+        <option value="#Lynn #린 #リン">Lynn</option>
+        <option value="#JooBin #주빈 #ジュビン">Joobin</option>
+        <option value="#HaYeon #하연 #ハヨン">Hayeon</option>
+        <option value="#ShiOn #시온 #シオン">Shion</option>
+        <option value="#ChaeWon #채원 #チェウォン">Chaewon</option>
+        <option value="#Sullin #설린 #ソルリン">Sullin</option>
+        <option value="#SeoAh #서아 #ソア">Seoah</option>
+        <option value="#JiYeon #지연 #ジヨン">Jiyeon</option>
      </select>
+        
      <br>
      <br>
      <div style="margin-left: 4%">
@@ -70,6 +87,9 @@
         <option value="no">No</option>
      </select>
      </div>
+     <div >
+        <textarea class="txtar3" id="lenk" rows="1" cols="40" placeholder="Input Link Here"></textarea>
+        </div>
     </div>
     
      <br>
@@ -92,12 +112,13 @@ function greet(){
         var choo = document.getElementById("choose").value;
         var mem = document.getElementById("member").value;
         var link = document.getElementById("link").value;
-
+        var unit = document.getElementById("un").value;
             clck.addEventListener("click",function(){
             
             var link = document.getElementById("link").value;
             if (link == "yes") {
-                var ans = "🔗 \n";
+                var lonk = document.getElementById("lenk").value;
+                var ans = "🔗 " + lonk + "\n";
             }
 
             if (link == "no") {
@@ -109,7 +130,7 @@ function greet(){
             cap + "\n" +
             ans + "\n" +
             "#tripleS #트리플에스 #トリプルS #トリプルエス #トエス" + "\n" +
-            mem + "@triplescosmos"
+            mem + unit + "@triplescosmos"
             ;
             
         })
