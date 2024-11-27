@@ -35,6 +35,88 @@
         </select>
         <br>
         <br>
+<label for="members">Choose Members: </label>
+<input type="checkbox" 
+           name="members" 
+           value="#SeoYeon #서연 #ソヨン">Seoyeon 
+    <input type="checkbox" 
+           name="members" 
+           value="#HyeRin #혜린 #ヘリン">Hyerin
+    <input type="checkbox" 
+           name="members" 
+           value="#JiWoo #지우 #ジウ">Jiwoo
+    <input type="checkbox" 
+           name="members" 
+           value="#ChaeYeon #채연 #チェヨン">Chaeyeon
+    <input type="checkbox" 
+           name="members" 
+           value= "#YooYeon #유연 #ユヨン">Yooyeon
+    <input type="checkbox" 
+           name="members" 
+           value="#SooMin #수민 #スミン">Soomin<br>
+    <input type="checkbox" 
+           name="members" 
+           value="#NaKyoung #나경 #ナギョン">Nakyoung
+    <input type="checkbox" 
+           name="members" 
+           value="#YuBin #유빈 #ユビン">Yubin
+    <input type="checkbox" 
+           name="members" 
+           value="#Kaede #카에데 #カエデ">Kaede
+    <input type="checkbox" 
+           name="members" 
+           value="#DaHyun #다현 #ダヒョン">Dahyun<br>
+     <input type="checkbox" 
+           name="members" 
+           value="#Kotone #코토네 #コトネ">Kotone
+     <input type="checkbox" 
+           name="members" 
+           value="#YeonJi #연지 #ヨンジ">Yeonji        
+     <input type="checkbox" 
+           name="members" 
+           value="#Nien #니엔 #ニエン">Nien
+     <input type="checkbox" 
+           name="members" 
+           value="#SoHyun #소현 #ソヒョン">Sohyun
+     <input type="checkbox" 
+           name="members" 
+           value="#Xinyu #신위 #シンウィー">Xinyu<br>
+     <input type="checkbox" 
+           name="members" 
+           value="#Mayu #마유 #マユン">Mayu
+     <input type="checkbox" 
+           name="members" 
+           value="#Lynn #린 #リン">Lynn
+     <input type="checkbox" 
+           name="members" 
+           value="#JooBin #주빈 #ジュビン">Joobin
+     <input type="checkbox" 
+           name="members" 
+           value="#HaYeon #하연 #ハヨン">Hayeon
+     <input type="checkbox" 
+           name="members" 
+           value="#ShiOn #시온 #シオン">Shion<br>
+     <input type="checkbox" 
+           name="members" 
+           value="#ChaeWon #채원 #チェウォン">Chaewon
+     <input type="checkbox" 
+           name="members" 
+           value="#Sullin #설린 #ソルリン">Sullin
+     <input type="checkbox" 
+           name="members" 
+           value="#SeoAh #서아 #ソア">Seoah
+     <input type="checkbox" 
+           name="members" 
+           value="#JiYeon #지연 #ジヨン">Jiyeon<br><br>
+    <button class="btn1" type="button" onclick="getValue()" id="chk">
+        Enter
+    </button>
+        <br>
+         <div >
+    <textarea class="txtar1" id="merms" rows="5" cols="40" placeholder="Example Hashtag" readonly></textarea>
+    </div>
+        <br>
+        <br>
         <label for="units">Choose a Unit</label>
      <select name="units" class="uni" id="un">
         <option value="">-</option>
@@ -47,36 +129,7 @@
         <option value="#VisionaryVision ">Visionary Vision</option>
         <option value="#tripleS_Hatchi ">Hatchi</option>
         </select>
-        <br>
-        <br>
-     <label for="memberss" id="lbl1">Choose a Hashtag</label>
-     <select name="memberss" id="member">
-        <option value="">-</option>
-        <option value=" #SeoYeon #서연 #ソヨン">Seoyeon</option>
-        <option value="#HyeRin #혜린 #ヘリン">Hyerin</option>
-        <option value="#JiWoo #지우 #ジウ">Jiwoo</option>
-        <option value="#ChaeYeon #채연 #チェヨン">Chaeyeon</option>
-        <option value="#YooYeon #유연 #ユヨン">Yooyeon</option>
-        <option value="#SooMin #수민 #スミン">Soomin</option>
-        <option value="#NaKyoung #나경 #ナギョ">Nakyoung</option>
-        <option value="#YuBin #유빈 #ユビン">Yubin</option>
-        <option value="#Kaede #카에데 #カエデ">Kaede</option>
-        <option value="#DaHyun #다현 #ダヒョン">Dahyun</option>
-        <option value="#Kotone #코토네 #コトネ">Kotone</option>
-        <option value="#YeonJi #연지 #ヨンジ">Yeonji</option>
-        <option value="#Nien #니엔 #ニエン">Nien</option>
-        <option value="#SoHyun #소현 #ソヒョン">Sohyun</option>
-        <option value="#Xinyu #신위 #シンウィー">Xinyu</option>
-        <option value="#Mayu #마유 #マユ">Mayu</option>
-        <option value="#Lynn #린 #リン">Lynn</option>
-        <option value="#JooBin #주빈 #ジュビン">Joobin</option>
-        <option value="#HaYeon #하연 #ハヨン">Hayeon</option>
-        <option value="#ShiOn #시온 #シオン">Shion</option>
-        <option value="#ChaeWon #채원 #チェウォン">Chaewon</option>
-        <option value="#Sullin #설린 #ソルリン">Sullin</option>
-        <option value="#SeoAh #서아 #ソア">Seoah</option>
-        <option value="#JiYeon #지연 #ジヨン">Jiyeon</option>
-     </select>  
+     
      <br>
      <br>
      <div style="margin-left: 4%">
@@ -106,14 +159,30 @@
     <br>
     <br>
 <script>
+function getValue() {
+            let checkboxes =
+                document.getElementsByName('members');
+            let result = "";
+            for (var i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].checked) {
+                    result += checkboxes[i].value
+                        + " " + " ";
+                }
+            }
+chk.addEventListener("click",function(){
+  document.getElementById("merms").innerHTML = result;
+}
+)}
+  
 function greet(){
         var cap = document.getElementById("txtar").value;
         var clck = document.getElementById("clck");
         var choo = document.getElementById("choose").value;
-        var mem = document.getElementById("member").value;
         var link = document.getElementById("link").value;
         var unit = document.getElementById("un").value;
-            clck.addEventListener("click",function(){
+        var tek = document.getElementById("merms").value
+    
+  clck.addEventListener("click",function(){
             
             var link = document.getElementById("link").value;
             if (link == "yes") {
@@ -130,7 +199,7 @@ function greet(){
             cap + "\n" +
             ans + "\n" +
             "#tripleS #트리플에스 #トリプルS #トリプルエス #トエス" + "\n" +
-            mem + unit + "@triplescosmos"
+            tek + unit + " @triplescosmos"
             ;
             
         })
