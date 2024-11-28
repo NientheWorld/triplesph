@@ -6,52 +6,91 @@ body{
     min-width: 1002px;
 }
 
-.txtar1 {
-   padding: 2.5%;
-   align-self: center;
-   font-family: Helvetica;
-   border-style: solid;
-   border-width:thick ;
-   border-color: rgb(0, 0, 0);
-   margin-top: 1%;
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
+.calendar{
+   margin: auto;
+   max-width: 500px;
+   font-family: serif;
+   font-weight: bold;
+    color: black
+
 }
 
-.txtar1::placeholder {
-    font-size: 15px;
-}
-
-.txtar2 {
-font-family: Helvetica;
-   border-style: dashed;
-   border-color: rgb(0, 0, 0);
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-}
-
-.selection {
-    margin-top: 1%;
+.month{
+    margin-top: 50px;
     text-align: center;
-    display: block;
-     margin-left: auto;
-     margin-right: auto;
-    }
-
-.btn1 {
-    display: block;
-     margin-left: auto;
-     margin-right: auto;
+    font-size: 13px;
+    background-color: #a1a0a0;
+    letter-spacing: 1px;
+    color: #000000;
+    border:2px solid rgb(0, 0, 0);
+    
 }
 
-.btn2 {
-    display: block;
-     margin-left: auto;
-     margin-right: auto;
+table,th,td{
+    width: 100%;
+    table-layout:fixed;
+    text-align: center;
+    font-size: 13px;
+    background-color: #c4c3c3e8;
+    border:2px solid rgb(0, 0, 0);
+    border-collapse: collapse;
 }
 
+.weeks {
+    background-color: #1eff00;
+    font-family: arial black;
+}
+
+tr,th,td {
+    padding: 15px;
+
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: #fd96de;
+  }
+  
+  /* The actual popup */
+  .popup .poptxt {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+ 
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
 
 /*Tab Style*/
 .tab {
@@ -70,6 +109,7 @@ font-family: Helvetica;
     transition: 0.3s;
     font-size: 17px;
 }
+
 /*Tab button Style*/
 .tab button:hover {
     background-color: rgb(48, 48, 48);
@@ -86,8 +126,3 @@ font-family: Helvetica;
     border-top: none;
 }
 
-.smem {
-    font-size:90%;
-    
-    
-}
