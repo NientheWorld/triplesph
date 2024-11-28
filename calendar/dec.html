@@ -10,12 +10,113 @@
 <body>
 <img src="/tripleslogo.png" alt="tsphlogo" width="150px"> 
 <div class="tab">
-    <button class="tablinks" onclick="window.location='index.html';">Home</button>>
-    <button class="tablinks" onclick="window.location='event.html';">Events</button>
-    <button class="tablinks" onclick="window.location='sns.html';">SNS Media</button> 
-    <button class="tablinks" onclick="window.location='calendar/dec.html';">Calendar</button> 
+    <button class="tablinks" onclick="window.location='/index.html';">Home</button>>
+    <button class="tablinks" onclick="window.location='/event.html';">Events</button>
+    <button class="tablinks" onclick="window.location='/sns.html';">SNS Media</button>
+    <button class="tablinks" onclick="window.location='calendar/dec.html';">Calendar</button>  
 </div>
 
+<div class="calendar">
+    <div class="month">
+        <strong><h1>DECEMBER 2024</h1></strong>
+    </div>
+    <table>
+        <tr class="weeks">
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sun</th>
+        </tr>
+        <tr>
+            <th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
+<th>7</th>
+        </tr>
+        <tr>
+            <th>8</th>
+<th>9</th>
+<th>10</th>
+<th>11</th>
+<th>12</th>
+<th>13</th>
+<th>14</th>
+        </tr>
+        <tr>
+            <th>15</th>
+<th>16</th>
+<th>17</th>
+<th>18</th>
+<th>19</th>
+<th>20</th>
+<th>21</th>
+        </tr>
+        <tr>
+            <th>22</th>
+<th>23</th>
+<th>24</th>
+<th>25</th>
+<th>
+<div class="popup" onclick="lynn()">
+    <span class="poptxt" id="lynn">Lynn's 1st Anniversary</span>
+    <span>26</span>
+</div>
+</th>
+<th>
+    <div class="popup" onclick="joob()">
+        <span class="poptxt" id="joob">Joobin's 1st Anniversary</span>
+        <span>27</span>
+    </div>
+    </th>
+    <th>
+        <div class="popup" onclick="hay()">
+            <span class="poptxt" id="hay">Hayeon's 1st Anniversary</span>
+            <span>28</span>
+        </div>
+        </th>
+        </tr>
+        <tr>
+            <th>
+                <div class="popup" onclick="shion()">
+                    <span class="poptxt" id="shion"style="margin-left:1px;">Shion's 1st Anniversary</span>
+                    <span>29</span>
+                </div>
+                </th>
+<th>30</th>
+<th>31</th>
 
+        </tr>
+    </table>
+</div>
+
+<script>
+    // When the user clicks on div, open the popup
+    function lynn() {
+      var popup = document.getElementById("lynn");
+      popup.classList.toggle("show");
+    }
+
+    function joob() {
+      var popup = document.getElementById("joob");
+      popup.classList.toggle("show");
+    }
+
+    function hay() {
+      var popup = document.getElementById("hay");
+      popup.classList.toggle("show");
+    }
+
+    function shion() {
+      var popup = document.getElementById("shion");
+      popup.classList.toggle("show");
+    }
+
+    </script>
 </body>
 </html>
