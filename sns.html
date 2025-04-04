@@ -188,7 +188,15 @@ function greet(){
             var link = document.getElementById("link").value;
             if (link == "yes") {
                 var lonk = document.getElementById("lenk").value;
-                var ans = "🔗 " + lonk + "\n";
+                var choo = document.getElementById("choose").value;
+                if (choo == "(🎙️) UPCOMING STREAM" || choo == "[🔴ON AIR]"){
+                    var ans = "🔗 " + " https://stationhead.com/triplesphstation
+                    " + "\n";
+                }
+                else {
+                    var ans = "🔗 " + lonk + "\n";
+                }
+                
             }
 
             if (link == "no") {
