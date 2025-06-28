@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="sns.css"/> 
 </head>
 <body>
-<img src="tripleslogo.png" alt="tsphlogo" width="150px"> 
+<img src="tripleslogo2.png" alt="tsphlogo" id="logo"> 
 <div class="tab">
     <button class="tablinks" onclick="window.location='index.html';">Home</button>>
     <button class="tablinks" onclick="window.location='event.html';">Events</button>
@@ -16,7 +16,7 @@
     <button class="tablinks" onclick="window.location='/calendar/dec.html';">Calendar</button> 
 </div>
 
-<h3 style="text-align: center; font-family: Lemon Milk;">SNS CAPTIONING AREA</h3>
+<h3 style="text-align: center; font-family: Lemon Milk; color: white;" >SNS CAPTIONING AREA</h3>
 
 <div >
     <textarea class="txtar1" id="txtar" rows="10" cols="40" placeholder="Input Caption Here"></textarea>
@@ -37,7 +37,7 @@
         <br>
 <b><label for="members">Choose Members: </label><br></b>
 <div class="smem">
-<input type="checkbox" 
+    <input type="checkbox" 
            name="members" 
            value="#SeoYeon #서연 #ソヨン"> Seoyeon 
     <input type="checkbox" 
@@ -113,8 +113,9 @@
         Enter
     </button>
 <br>
+
          <div >
-    <textarea class="txtar3" id="merms" rows="5" cols="40" placeholder="Example Hashtag" readonly></textarea>
+    <textarea class="txtar3" id="merms"; rows="5" cols="40" placeholder="Example Hashtag" readonly></textarea>
     </div>
         <br>
         <br>
@@ -155,25 +156,42 @@
     <textarea class="txtar2" id="header" rows="15" cols="40" readonly></textarea>
     <br>
     <button class="btn2" type="button" onclick="copycat()" id="clip">Copy to Clipboard</button>
+
+    <br>
+    <br>
+    <div class="link">
+    <form action="https://x.com">
+        <input style="background-color: rgb(173, 173, 173);"   type="submit" value="Go to 'X'">
+    </form>
+    <form action="https://facebook.com">
+        <input style="background-color: rgb(104, 119, 255);" type="submit" value="Go to 'Facebook'">
+    </form>
+    </div>
+    <br>
     <br>
     <br>
     <br>
     <br>
 <script>
 function getValue() {
-            let checkboxes =
+         let checkboxes =
                 document.getElementsByName('members');
+            
             let result = "";
             for (var i = 0; i < checkboxes.length; i++) {
                 if (checkboxes[i].checked) {
                     result += checkboxes[i].value
                         + " " + " ";
-                }
-            }
-chk.addEventListener("click",function(){
+                }}
+           
+           chk.addEventListener("click",function(){
   document.getElementById("merms").innerHTML = result;
-}
-)}
+           }
+           )}
+
+  
+
+
   
 function greet(){
         var cap = document.getElementById("txtar").value;
