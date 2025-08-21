@@ -1,0 +1,113 @@
+{
+    "members": {
+        "s1": {
+            "name":"seoyeon",
+            "hash": "#SeoYeon #서연 #ソヨン"
+        },
+        
+        "s2": {
+            "name":"hyerin",
+            "hash": "#HyeRin #혜린 #ヘリン"
+        },
+        "s3": {"name":"jiwoo",
+            "hash": "#JiWoo #지우 #ジウ"
+        },
+        "s4": {
+            "name":"chaeyeon",
+            "hash": "#ChaeYeon #채연 #チェヨン"
+        },
+        "s5": {
+            "name":"yooyeon",
+            "hash": "#YooYeon #유연 #ユヨン"
+        },
+        "s6": {
+            "name":"soomin",
+            "hash": "#SooMin #수민 #スミン"
+        },
+        "s7": {
+            "name":"nakyoung",
+            "hash": "#NaKyoung #나경 #ナギョン"
+        },
+        "s8": {
+            "name":"yubin",
+            "hash": "#YuBin #유빈 #ユビン"
+        },
+        "s9": {
+            "name":"kaede",
+            "hash": "#Kaede #카에데 #カエデ"
+        },
+        "s10": {
+            "name":"dahyun",
+            "hash": "#DaHyun #다현 #ダヒョン"
+        },
+        "s11": {
+            "name":"kotone",
+            "hash": "#Kotone #코토네 #コトネ"
+        },
+        "s12": {
+            "name":"yeonji",
+            "hash": "#YeonJi #연지 #ヨンジ"
+        },
+        "s13": {
+            "name":"nien",
+            "hash": "#Nien #니엔 #ニエン"
+        },
+        "s14": {
+            "name":"sohyun",
+            "hash": "#SoHyun #소현 #ソヒョン"
+        },
+        "s15": {
+            "name":"xinyu",
+            "hash": "#Xinyu #신위 #シンウィー"
+        },
+        "s16": {
+            "name":"mayu",
+            "hash": "#Mayu #마유 #マユン"
+        },
+        "s17": {
+            "name":"lynn",
+            "hash": "#Lynn #린 #リン"
+        },
+        "s18": {
+            "name":"joobin",
+            "hash": "#JooBin #주빈 #ジュビン"
+        },
+        "s19": {
+            "name":"hayeon",
+            "hash": "#HaYeon #하연 #ハヨン"
+        },
+        "s20": {
+            "name":"shion",
+            "hash": "#ShiOn #시온 #シオン"
+        },
+        "s21": {
+            "name":"chaewon",
+            "hash": "#ChaeWon #채원 #チェウォン"
+        },
+        "s22": {
+            "name":"sullin",
+            "hash": "#Sullin #설린 #ソルリン"
+        },
+        "s23": {
+            "name":"seoah",
+            "hash": "#SeoAh #서아 #ソア"
+        },
+        "s24": {
+            "name":"jiyeon",
+            "hash": "#JiYeon #지연 #ジヨン"
+        }
+    },
+
+
+    "units":{
+        "aaa":"#AcidAngelfromAsia #애시드엔젤프롬에이시아",
+        "kre": "#KRystalEyes #크리스탈아이즈",
+        "lovelu": "#LOVElution #러블루션",
+        "evol": "#EVOLution #에볼루션",
+        "nxt": "#tripleS_NXT",
+        "aria": "#tripleS_Aria #트리플에스아리아",
+        "vv": "#VisionaryVision #비저너리비전",
+        "hatchi": "#tripleS_Hatchi #핫찌"
+    }
+}
+
