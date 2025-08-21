@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" 
+content="width=device-width, initial-scale=1">
+<meta http-equiv='cache-control' content='no-cache'>
+<meta http-equiv='expires' content='0'> 
+<meta http-equiv='pragma' content='no-cache'>
+<title>TSPH SNS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="bg" id="blur"></div>
+<div class="white" id="wt"></div>
+<div class="semi-container" id="semi">
+<h1>WELCOME TO TSPH SNS</h1>
+<h3>Log in to Continue</h3>
+
+<div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" id="user" placeholder="Enter Username" name="uname" required>
+    <br>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" id="pass" placeholder="Enter Password" name="psw" required>
+        <br> <br>
+      <button type="submit" onclick=acc()>Login</button>
+    </div>
+</div>
+
+<h1 id="head">tripleS Philippines SNS</h1>
+
+<div class="alert">
+
+      <p id="hashtag"></p>
+      <p id="geny"></p>
+</div>
+
+<div class="alert2" id="addhash">
+
+      <p >Add Hashtags or Links</p>
+
+      <div >
+    <textarea class="txtar2" id="adds"; rows="5" cols="80" placeholder="Input Hashtag">#</textarea>
+    <br><br>
+    <textarea class="txtar2" id="links"; rows="5" cols="80" placeholder="Input Link">🔗</textarea>
+    </div>
+
+    <button class="btn3" type="button" onclick="closed()" id="clip">Generate</button>
+
+<button class="btn3" type="button" onclick="closed()" id="clip">Cancel</button>
+<br>
+</div>
+
+<div class="alert3" id="generate">
+
+      <p>TEMPLATE</p>
+
+      <div >
+    <textarea class="txtar5" id="gens"; rows="20" cols="80" readonly></textarea>
+    <br><br>
+    
+    </div>
+
+    <div class="bowton">
+       <button class="btn3" type="button" onclick="copycat2()" id="clip1">Copy Caption</button>
+
+<button class="bt3" type="button" onclick="closed()" id="clip1">Cancel</button>
+
+    </div>
+
+   <br>
+</div>
+
+
+<div >
+    <textarea class="txtar1" id="txtar" rows="10" cols="40" placeholder="Input Caption Here"></textarea>
+    </div>
+
+    <br><br>
+    <div class="selection">
+        <b><label for="updates">Choose a  Header</label></b>
+     <select name="updates" class="bx1" id="choose">
+        <option value="[✉]tripleS Mail">Mail Update</option>
+        <option value="[📷]tripleS Update">Photo Update</option>
+        <option value="[📺]tripleS Update">Video Update</option>
+        <option value="[📶]SIGNAL Update">Signal Update</option>
+        <option value="[🚀] tripleS Gravity Update">Gravity Update</option>
+        <option value="(🎙️) UPCOMING STREAM">Stationhead Upcoming Stream</option>
+        <option value="[🔴ON AIR]">Stationhead On Air</option>
+        </select>
+
+      </div>
+    
+    <br>
+
+<div class="dropdown" id="dropdown">
+  <b><p for="members" id="head1">Choose Members: </p><br></b>
+<div class="smem">
+    <input type="checkbox" 
+           name="members" 
+           value="s1"> Seoyeon 
+    <input type="checkbox" 
+           name="members" 
+           value="s2"> Hyerin
+    <input type="checkbox" 
+           name="members" 
+          value="s3"> Jiwoo
+    <input type="checkbox" 
+           name="members" 
+          value="s4"> Chaeyeon<br>
+    <input type="checkbox" 
+           name="members" 
+           value="s5"> Yooyeon
+    <input type="checkbox" 
+           name="members" 
+           value="s6"> Soomin
+    <input type="checkbox" 
+           name="members" 
+           value="s7"> Nakyoung
+    <input type="checkbox" 
+           name="members" 
+           value="s8"> Yubin<br>
+    <input type="checkbox" 
+           name="members" 
+           value="s9"> Kaede
+    <input type="checkbox" 
+           name="members" 
+          value="s10"> Dahyun
+     <input type="checkbox" 
+           name="members" 
+           value="s11"> Kotone
+     <input type="checkbox" 
+           name="members" 
+           value="s12"> Yeonji<br>       
+     <input type="checkbox" 
+           name="members" 
+           value="s13"> Nien
+     <input type="checkbox" 
+           name="members" 
+           value="s14"> Sohyun
+     <input type="checkbox" 
+           name="members" 
+           value="s15"> Xinyu
+     <input type="checkbox" 
+           name="members" 
+           value="s16"> Mayu<br>
+     <input type="checkbox" 
+           name="members" 
+           value="s17"> Lynn
+     <input type="checkbox" 
+           name="members" 
+           value="s18"> Joobin
+     <input type="checkbox" 
+           name="members" 
+           value="s19"> Hayeon
+     <input type="checkbox" 
+           name="members" 
+           value="s20"> Shion<br>
+     <input type="checkbox" 
+           name="members" 
+           value="s21"> Chaewon
+     <input type="checkbox" 
+           name="members" 
+           value="s22"> Sullin
+     <input type="checkbox" 
+           name="members" 
+           value="s23"> Seoah
+     <input type="checkbox" 
+           name="members" 
+           value="s24">Jiyeon<br><br></div>
+
+
+<div class="unitss">
+        <b><p for="units" id="head1">Choose a Unit</p></b>
+     <select name="units" class="uni" id="un" >
+        <option value="">-</option>
+        <option value="#AcidAngelfromAsia #애시드엔젤프롬에이시아">AAA</option>
+        <option value="#KRystalEyes #크리스탈아이즈">KRE</option>
+        <option value="#LOVElution #러블루션">LOVElution</option>
+        <option value="#tripleS_NXT">tripleS NXT</option>
+        <option value="#tripleS_Aria #트리플에스아리아">Aria</option>
+        <option value="#EVOLution #에볼루션">EVOLution</option>
+        <option value="#VisionaryVision ">Visionary Vision</option>
+        <option value="#tripleS_Hatchi ">Hatchi</option>
+        </select>
+</div>
+
+<br> 
+<button class="btn1" type="button" onclick="popup1()" id="pops">
+        Additional Hashtags or Links
+    </button>
+    <br><br>      
+<button class="btn1" type="button" onclick="getValue()" id="chk">
+        Enter
+    </button>
+<br>
+
+         <div >
+    <textarea class="txtar3" id="merms"; rows="5" cols="40" placeholder="Example Hashtag" readonly></textarea>
+    </div>
+<div class="buton">
+      <button class="btn2" type="button" onclick="copycat()" id="clip">Copy Hashtag</button>
+    <button class="btn2" type="button" onclick="popup2()" id="clip">Generate</button>
+
+
+</div>
+    
+</div>
+
+<script>
+
+function getValue() {
+      var unit = document.getElementById("un").value;
+      var adds = document.getElementById("adds").value;
+      var links = document.getElementById("links").value;
+      fetch('data.json')
+            .then (response => response.json())
+            .then (data => {
+                console.log(data)
+            
+                  
+
+         let checkboxes =
+                document.getElementsByName('members');
+            
+            let result = "";
+            for (var i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].checked) {
+                        x = checkboxes[i].value
+
+
+                    result += data['members'][x]['hash']
+                        + " ";
+                }}
+               
+  document.getElementById("merms").innerHTML = unit + " " + result + adds
+ 
+                 })
+           }
+
+function copycat(){
+        var copykey = document.getElementById("merms");
+      var unit = document.getElementById("hashtag");
+      var blur = document.getElementById('blur');
+
+            copykey.select();
+            copykey.setSelectionRange(0,9999999);
+
+            document.execCommand("copy");
+            document.getElementById("hashtag").innerHTML = "Hashtag copied"
+
+            unit.style.display = 'block';
+            blur.style.display = 'block'
+            setTimeout(()=>{
+                  unit.style.display = 'none';
+                  blur.style.display = 'none'
+                  
+
+                    },1500)
+                  
+    }
+
+function copycat2(){
+      var copykey = document.getElementById("gens");
+      var unit = document.getElementById("geny");
+      var blur = document.getElementById('blur');
+            copykey.select();
+            copykey.setSelectionRange(0,9999999);
+
+            document.execCommand("copy");
+            document.getElementById("geny").innerHTML = "Caption Copied"
+            alert("Caption Copied")
+            geny.style.display = 'block';
+            blur.style.display = 'block'
+            setTimeout(()=>{
+                  geny.style.display = 'none';
+                  blur.style.display = 'none'
+                  
+
+                    },1500)
+    }
+
+
+
+function popup2(){
+      var copykey = document.getElementById("gens");
+      var gen = document.getElementById("generate");
+      var blur = document.getElementById('blur');
+      var cap = document.getElementById('txtar').value;
+      var cho = document.getElementById('choose').value;
+      var link = document.getElementById('links').value;
+      var hash = document.getElementById('merms').value;
+
+      var final = cho + "\n\n" + cap + "\n\n" + link + "\n\n" + hash
+
+      
+
+      document.getElementById("gens").innerHTML = final
+      blur.style.display = 'block'   
+      gen.style.display = 'block';
+      
+            
+                  
+    }
+
+function popup1() {
+      var adds = document.getElementById("addhash")
+      var blur = document.getElementById('blur');
+      adds.style.display = 'block'
+      blur.style.display = 'block'
+}
+
+function closed() {
+      var adds = document.getElementById("addhash")
+      var gen = document.getElementById("generate")
+      var blur = document.getElementById('blur');
+
+      adds.style.display = 'none'
+      gen.style.display = 'none'
+      blur.style.display = 'none'
+
+
+}
+
+
+function acc(){
+
+const user = document.getElementById("user").value;
+const pass = document.getElementById("pass").value;
+
+
+
+fetch('admin.json')
+            .then (response => response.json())
+            .then (data => {
+                console.log(data)
+
+                if(data["admin"].user == user && data["admin"].pass == pass) {
+                    var sem = document.getElementById('semi');
+                    var blur = document.getElementById('blur');
+
+                    sem.style.display = 'none';
+                    blur.style.display = 'none'
+
+                }
+
+                else {
+                    alert("Wrong Username or Password")
+                }
+
+            }); 
+
+ 
+}
+
+</script>
+
+</body>
+</html>
