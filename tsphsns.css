@@ -1,0 +1,205 @@
+@media screen and (min-width:600px) {
+
+body{
+    background-image: url('bggrid2.png');
+    background-repeat: no-repeat;
+    background-size: 2000px 1121px ;
+    position: fixed;
+    z-index: 0;
+   
+    
+    
+}
+
+.white{
+    position: fixed;
+    background: white;
+    width: 95vw;
+    height: 45vw;
+    opacity: 0.2;
+    margin-left: 2.5vw;
+    margin-top: 2.5vw;
+    z-index: -1;
+    
+    
+}
+
+#head{
+    color: white;
+    font-size: 5vw;
+    padding: 2vw;
+    text-align: center;
+    width: 100vw;
+    margin-top: 0.3vw;
+}
+
+
+.bg{
+    display: block;
+    background: rgb(55, 0, 255);
+    width: 100vw;
+    height: 55vw;
+    opacity: 0.5;
+    position: fixed;
+    margin-top: -15vw;
+    margin-left: -1vw;
+    filter: blur(100vw);
+   
+}
+.semi-container {
+    display: block;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    height: 20vw;
+    width: 40vw;
+    margin-left: 30vw;
+    margin-top: 15vw;
+    align-content: center;
+    text-align: center;
+    border-radius: 2vw;
+    z-index: 2;
+}   
+
+.selection {
+    color: rgb(255, 255, 255);
+    position: relative;
+    margin-left: 41vw;
+    margin-top: -1vw;
+    margin-bottom: 2vw;
+    z-index: 0;
+}
+
+
+#hashtag {
+    display: none;
+    position: absolute;
+    width: 17vw;
+    height: 12vw;
+    background: rgb(209, 209, 209);
+    text-align: center;
+    align-content: center;
+    margin-left: 41.5vw;
+    font-size: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+   
+
+}
+
+#geny {
+    display: none;
+    position: absolute;
+    width: 17vw;
+    height: 12vw;
+    background: rgb(209, 209, 209);
+    text-align: center;
+    align-content: center;
+    margin-left: 41.5vw;
+    font-size: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#addhash {
+    display: none;
+    position: absolute;
+    width: 40vw;
+    height: 22vw;
+    justify-self: center;
+    margin-top: -2vw;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.5vw;
+    outline: 5px dashed rgb(255, 255, 255);
+    background: rgb(72, 62, 170);
+    z-index: 2;
+}
+
+.sched {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+#dropdown {
+    color: white;
+    z-index: 1;
+    margin-top: -3vw;
+    font-size: 1vw;
+    
+    
+}
+
+#head1 {
+    width: 10vw;
+  
+   text-align: center;
+   margin-left: 45vw;
+}
+
+.smem {
+    
+    margin-top: -2vw;
+    width: 50vw;
+    text-align: center;
+    margin-left: 25vw;
+    
+}
+
+.btn1 {
+    width: 10vw;
+    margin-left: 45vw;
+}
+
+.btn2 {
+    width: 16vw;
+    margin: 2vw;
+
+    
+}
+
+.buton {
+    margin-left: 30vw;
+    margin-top: -1vw;
+}
+
+#txtar {
+    margin-top: -4vw;
+    width: 50vw;
+    margin-left: 25vw;
+}
+.txtar3 {
+    margin-top: 2vw;
+    width: 50vw;
+    margin-left: 25vw;
+}
+
+.txtar5 {
+    outline: 2px dashed rgb(255, 255, 255);
+}
+
+.uni {
+    width: 7vw;
+    height: 25px;
+    margin-left: 46.5vw;
+    margin-right: 46.5vw;
+}
+
+.unitss {
+    margin-top: -1vw;
+}
+
+#generate {
+    color: white;
+    font-size: 2vw;
+    display: none;
+    position: absolute;
+    
+    width: 40vw;
+    height: 30vw;
+    margin-top: -5vw;
+    justify-self: center;
+    justify-items: center;
+    outline: 5px dashed rgb(255, 255, 255);
+    background: rgb(72, 62, 170);
+    z-index: 5;
+}
+
+}
